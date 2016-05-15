@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <!-- 标题图像 -->
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/top_register_succeed"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:background="@color/white" >
+
+            <ImageView
+                android:layout_width="220.0dip"
+                android:layout_height="33.0dip"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/logo_test_color"
+                android:contentDescription="@string/image_desc"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="库存管理"
+                android:textColor="@color/child_page_titletextcolor"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/spliter" />
+        
+    </LinearLayout>
+    
+        <!-- tab 标签 -->
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        
+        <RelativeLayout
+            android:id="@+id/tab_stock_scan" 
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#fa7644"
+            >
+         
+            <TextView 
+                android:id="@+id/tv_stock_scan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="库存查看"
+                android:textSize="18sp"
+                android:textColor="@drawable/stockpile_tab_font_selector"
+                android:layout_centerInParent="true"
+                />
+            
+        </RelativeLayout>
+        
+        <View 
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#ea6c3d"/>
+        
+        <RelativeLayout
+            android:id="@+id/tab_stock_upload"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#fa7644" >
+
+            <TextView
+                android:id="@+id/tv_stock_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="库存上传"
+                android:textColor="@drawable/stockpile_tab_font_selector"
+                android:textSize="18sp" />
+            
+        </RelativeLayout>
+
+    </LinearLayout>    
+    <!-- 标签结束 -->    
+        
+        <!-- 显示内容 content -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                />
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="gone" />
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</TabHost>

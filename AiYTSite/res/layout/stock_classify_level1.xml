@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#fa7644">
+    <TextView 
+        android:id="@+id/stock_classify_level1_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="肉类"
+        android:layout_centerInParent="true"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        />
+
+    <ImageView
+        android:id="@+id/stock_classify_level1_back" 
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/shake_back_normal"
+        android:layout_marginLeft="5dp"
+        />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/stock_classify_level1_progressBar_layout" 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    
+        <ProgressBar 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_centerInParent="true"/>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/stock_classify_level1_showInfo_layout" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        <ListView 
+            android:id="@+id/stock_classify_level1_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+            
+        </ListView>
+        
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+     <LinearLayout 
+            android:background="@color/white" 
+            android:id="@+id/title_layout" 
+            android:layout_width="fill_parent" 
+            android:layout_height="50.0dip">
+            <ImageView 
+                android:id="@+id/title_image"
+                android:background="@drawable/logo_test_color" 
+                android:layout_width="220.0dip" 
+                android:layout_height="33.0dip" 
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitXY"  
+                android:contentDescription="@string/image_desc" />
+            
+            <TextView 
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="首 页"
+                android:textSize="18sp"
+                android:textColor="@color/child_page_titletextcolor"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
+                />
+     </LinearLayout>
+     
+     <RelativeLayout
+         android:id="@+id/view_home_page_addrees_layout"
+         android:layout_width="fill_parent"
+         android:layout_height="50dp"
+         android:layout_below="@id/title_layout"
+         android:background="@drawable/list_bg_normal" 
+         android:layout_margin="3dp"
+         >
+            
+         <TextView 
+             android:id="@+id/view_home_page_"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="眉山野生养殖场"
+             android:layout_centerInParent="true"
+             android:textSize="18sp"/>
+         
+     </RelativeLayout>
+     
+     
+     <LinearLayout
+         android:id="@+id/view_home_page_sale" 
+         android:layout_width="match_parent"
+         android:layout_height="150dp"
+         android:background="#f0ffff"
+         android:orientation="vertical"
+         android:layout_below="@id/view_home_page_addrees_layout">
+         
+         <LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center_horizontal">
+             <TextView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="用户："
+             android:textSize="20sp"/>
+         
+         <TextView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="成都亿桥科技"
+             android:textSize="20sp"/>
+         </LinearLayout>
+         
+         <LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center_horizontal">
+         
+             <TextView 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textSize="22sp"
+                 android:text="本月销售额："/>
+             <TextView 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textSize="42sp"
+                 android:textColor="#f00"
+                 android:text="￥3896"/>
+         </LinearLayout>
+         
+     </LinearLayout>
+     
+     <LinearLayout 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="15dp"
+         android:orientation="vertical"
+         android:layout_below="@id/view_home_page_sale">
+         <TextView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="待发货订单："/>
+         
+         <LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content">
+             
+         </LinearLayout>
+     </LinearLayout>
+
+</RelativeLayout>

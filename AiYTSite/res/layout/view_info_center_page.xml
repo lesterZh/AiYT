@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical">
+
+    <!-- 自定义标题栏 -->
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_alignParentTop="true"
+            android:background="@color/white" >
+
+            <ImageView
+                android:layout_width="220.0dip"
+                android:layout_height="33.0dip"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/logo_test_color"
+                android:contentDescription="@string/image_desc"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="个人中心"
+                android:textColor="@color/child_page_titletextcolor"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/spliter" />
+    <!-- 自定义标题栏 -->    
+    </LinearLayout>
+    
+	<RelativeLayout
+            android:id="@+id/my_xiaomai_top"
+            android:layout_width="fill_parent"
+            android:layout_height="120.0dip"
+            android:background="@drawable/my_xiaomai_bg" >
+
+            <LinearLayout
+                android:id="@+id/my_xiaomai_top_user_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20.0dip"
+                android:orientation="horizontal"
+                android:padding="10.0dip"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:id="@+id/user_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/user"
+                    android:contentDescription="@string/image_desc" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="用户："
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/white"
+                        android:textSize="18.0sp" />
+                    
+                    <TextView
+                        android:id="@+id/view_info_center_page_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="cdyqkj2008"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/white"
+                        android:textSize="20.0sp" />
+
+            </LinearLayout>
+            
+        </RelativeLayout>
+        
+	
+	<LinearLayout
+	    android:layout_marginTop="20dp"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/list_bg_normal"
+	    android:orientation="vertical"
+	    android:paddingBottom="0.5dip"
+	    android:paddingTop="0.5dip" >
+
+	    <RelativeLayout
+	        android:id="@+id/view_info_center_page_user_info_detail" 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="10.0dip"
+	        android:layout_marginLeft="10.0dip"
+	        android:layout_marginTop="10.0dip" >
+
+	        <ImageView
+	            android:id="@+id/mycoupon_icon"
+	            android:layout_width="25.0dip"
+	            android:layout_height="25.0dip"
+	            android:layout_alignParentLeft="true"
+	            android:src="@drawable/address_manage_image" />
+
+	        <TextView
+	            android:id="@+id/sort_barnd_item_text"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="10.0dip"
+	            android:layout_marginRight="10.0dip"
+	            android:layout_toRightOf="@id/mycoupon_icon"
+	            android:ellipsize="end"
+	            android:singleLine="true"
+	            android:text="用户信息"
+	            android:textColor="@color/black3_text_color"
+	            android:textSize="14.0sp" />
+
+	        <RelativeLayout
+	            
+	            android:layout_width="50dp"
+	            android:layout_height="25dp"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true"
+	            >
+	            
+	            <ImageView
+	            
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginRight="15dp"
+	            android:background="@drawable/arrow_right"
+	            android:contentDescription="@string/image_desc"
+	            android:visibility="visible" />
+	            
+	        </RelativeLayout>
+	        
+	    </RelativeLayout>
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/list_bg_normal"
+	    android:orientation="vertical"
+	    android:paddingBottom="0.5dip"
+	    android:paddingTop="0.5dip" >
+
+	    <RelativeLayout
+	        android:id="@+id/view_info_center_page_address_mamager_detail" 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="10.0dip"
+	        android:layout_marginLeft="10.0dip"
+	        android:layout_marginTop="10.0dip" >
+
+	        <ImageView
+	            android:id="@+id/mycoupon_icon2"
+	            android:layout_width="25.0dip"
+	            android:layout_height="25.0dip"
+	            android:layout_alignParentLeft="true"
+	            android:src="@drawable/address_manage_image" />
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="10.0dip"
+	            android:layout_marginRight="10.0dip"
+	            android:layout_toRightOf="@id/mycoupon_icon2"
+	            android:ellipsize="end"
+	            android:singleLine="true"
+	            android:text="地址管理"
+	            android:textColor="@color/black3_text_color"
+	            android:textSize="14.0sp" />
+
+	        <RelativeLayout
+	            
+	            android:layout_width="50dp"
+	            android:layout_height="25dp"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true"
+	            >
+	            
+	            <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginRight="15dp"
+	            android:background="@drawable/arrow_right"
+	            android:contentDescription="@string/image_desc"
+	            android:visibility="visible" />
+	            
+	        </RelativeLayout>
+	        
+	    </RelativeLayout>
+	</LinearLayout>
+
+	
+	
+	<LinearLayout
+	    android:id="@+id/my_coupon_layout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/list_bg_normal"
+	    android:orientation="vertical"
+	    android:paddingBottom="0.5dip"
+	    android:paddingTop="0.5dip" >
+
+	    <RelativeLayout
+	        android:id="@+id/view_info_center_page_change_password_detail"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="10.0dip"
+	        android:layout_marginLeft="10.0dip"
+	        android:layout_marginTop="10.0dip" >
+
+	        <ImageView
+	            android:id="@+id/mycoupon_icon3"
+	            android:layout_width="25.0dip"
+	            android:layout_height="25.0dip"
+	            android:layout_alignParentLeft="true"
+	            android:src="@drawable/address_manage_image" />
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="10.0dip"
+	            android:layout_marginRight="10.0dip"
+	            android:layout_toRightOf="@id/mycoupon_icon3"
+	            android:ellipsize="end"
+	            android:singleLine="true"
+	            android:text="修改密码"
+	            android:textColor="@color/black3_text_color"
+	            android:textSize="14.0sp" />
+
+	        <RelativeLayout 
+	            
+	            android:layout_width="50dp"
+	            android:layout_height="25dp"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true"
+	            >
+	            
+	            <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginRight="15dp"
+	            android:background="@drawable/arrow_right"
+	            android:contentDescription="@string/image_desc"
+	            android:visibility="visible" />
+	            
+	        </RelativeLayout>
+	        
+	    </RelativeLayout>
+	</LinearLayout>
+	
+	
+	
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/list_bg_normal"
+	    android:orientation="vertical"
+	    android:paddingBottom="0.5dip"
+	    android:paddingTop="0.5dip" >
+
+	    <RelativeLayout
+	        android:id="@+id/view_info_center_page_message_center_detail"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="10.0dip"
+	        android:layout_marginLeft="10.0dip"
+	        android:layout_marginTop="10.0dip" >
+
+	        <ImageView
+	            android:id="@+id/mycoupon_icon4"
+	            android:layout_width="25.0dip"
+	            android:layout_height="25.0dip"
+	            android:layout_alignParentLeft="true"
+	            android:src="@drawable/address_manage_image" />
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="10.0dip"
+	            android:layout_marginRight="10.0dip"
+	            android:layout_toRightOf="@id/mycoupon_icon4"
+	            android:ellipsize="end"
+	            android:singleLine="true"
+	            android:text="消息中心"
+	            android:textColor="@color/black3_text_color"
+	            android:textSize="14.0sp" />
+
+	        <RelativeLayout 
+	            
+	            android:layout_width="50dp"
+	            android:layout_height="25dp"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true"
+	            >
+	            
+	            <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginRight="15dp"
+	            android:background="@drawable/arrow_right"
+	            android:contentDescription="@string/image_desc"
+	            android:visibility="visible" />
+	            
+	        </RelativeLayout>
+	        
+	    </RelativeLayout>
+	</LinearLayout>
+	
+	
+	<LinearLayout
+	    android:layout_marginTop="20dp"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/list_bg_normal"
+	    android:orientation="vertical"
+	    android:paddingBottom="0.5dip"
+	    android:paddingTop="0.5dip" >
+
+	    <RelativeLayout
+	        android:id="@+id/view_info_center_page_help_center_detail" 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="10.0dip"
+	        android:layout_marginLeft="10.0dip"
+	        android:layout_marginTop="10.0dip" >
+
+	        <ImageView
+	            android:id="@+id/mycoupon_icon5"
+	            android:layout_width="25.0dip"
+	            android:layout_height="25.0dip"
+	            android:layout_alignParentLeft="true"
+	            android:src="@drawable/address_manage_image" />
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="10.0dip"
+	            android:layout_marginRight="10.0dip"
+	            android:layout_toRightOf="@id/mycoupon_icon5"
+	            android:ellipsize="end"
+	            android:singleLine="true"
+	            android:text="帮助中心"
+	            android:textColor="@color/black3_text_color"
+	            android:textSize="14.0sp" />
+
+	        <RelativeLayout
+	            
+	            android:layout_width="50dp"
+	            android:layout_height="25dp"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true"
+	            >
+	            
+	            <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginRight="15dp"
+	            android:background="@drawable/arrow_right"
+	            android:contentDescription="@string/image_desc"
+	            android:visibility="visible" />
+	            
+	        </RelativeLayout>
+	        
+	    </RelativeLayout>
+	</LinearLayout>
+	
+	
+	
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/list_bg_normal"
+	    android:orientation="vertical"
+	    android:paddingBottom="0.5dip"
+	    android:paddingTop="0.5dip" >
+
+	    <RelativeLayout
+	        android:id="@+id/view_info_center_page_switch_account_detail" 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="10.0dip"
+	        android:layout_marginLeft="10.0dip"
+	        android:layout_marginTop="10.0dip" >
+
+	        <ImageView
+	            android:id="@+id/mycoupon_icon6"
+	            android:layout_width="25.0dip"
+	            android:layout_height="25.0dip"
+	            android:layout_alignParentLeft="true"
+	            android:src="@drawable/address_manage_image" />
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="10.0dip"
+	            android:layout_marginRight="10.0dip"
+	            android:layout_toRightOf="@id/mycoupon_icon6"
+	            android:ellipsize="end"
+	            android:singleLine="true"
+	            android:text="切换账号"
+	            android:textColor="@color/black3_text_color"
+	            android:textSize="14.0sp" />
+
+	        <RelativeLayout 
+	            
+	            android:layout_width="50dp"
+	            android:layout_height="25dp"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true"
+	            >
+	            
+	            <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginRight="15dp"
+	            android:background="@drawable/arrow_right"
+	            android:contentDescription="@string/image_desc"
+	            android:visibility="visible" />
+	            
+	        </RelativeLayout>
+	        
+	    </RelativeLayout>
+	</LinearLayout>
+
+	
+	
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/list_bg_normal"
+	    android:orientation="vertical"
+	    android:paddingBottom="0.5dip"
+	    android:paddingTop="0.5dip" >
+
+	    <RelativeLayout
+	        android:id="@+id/view_info_center_page_advise_commit_detail" 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="10.0dip"
+	        android:layout_marginLeft="10.0dip"
+	        android:layout_marginTop="10.0dip" >
+
+	        <ImageView
+	            android:id="@+id/mycoupon_icon7"
+	            android:layout_width="25.0dip"
+	            android:layout_height="25.0dip"
+	            android:layout_alignParentLeft="true"
+	            android:src="@drawable/address_manage_image" />
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="10.0dip"
+	            android:layout_marginRight="10.0dip"
+	            android:layout_toRightOf="@id/mycoupon_icon7"
+	            android:ellipsize="end"
+	            android:singleLine="true"
+	            android:text="提交建议"
+	            android:textColor="@color/black3_text_color"
+	            android:textSize="14.0sp" />
+
+	        <RelativeLayout 
+	           
+	            android:layout_width="50dp"
+	            android:layout_height="25dp"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true"
+	            >
+	            
+	            <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginRight="15dp"
+	            android:background="@drawable/arrow_right"
+	            android:contentDescription="@string/image_desc"
+	            android:visibility="visible" />
+	            
+	        </RelativeLayout>
+	        
+	    </RelativeLayout>
+	</LinearLayout>
+</LinearLayout>
+</ScrollView>

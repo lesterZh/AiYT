@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    <!-- 自定义标题栏 -->
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_alignParentTop="true"
+            android:background="@color/white" >
+
+            <ImageView
+                android:layout_width="220.0dip"
+                android:layout_height="33.0dip"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/logo_test_color"
+                android:contentDescription="@string/image_desc"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="订单管理"
+                android:textColor="@color/child_page_titletextcolor"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/spliter" />
+    <!-- 自定义标题栏 -->    
+    </LinearLayout>
+    
+	
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:baselineAligned="false"
+	    android:gravity="center"
+	    android:orientation="horizontal" >
+
+	    <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:orientation="vertical" >
+
+	        <ImageButton
+	            android:id="@+id/order_main_page_weifahuo_btn"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/order_main_page_button_selector"
+	            android:src="@drawable/order_main_page_car" />
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="未发货"
+	            android:textColor="@color/black"
+	            android:textSize="12sp" />
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:orientation="vertical" >
+
+	        <ImageButton
+	            android:id="@+id/order_main_page_yifahuo_btn"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/order_main_page_button_selector"
+	            android:src="@drawable/order_main_page_car" />
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="已发货"
+	            android:textColor="@color/black"
+	            android:textSize="12sp" />
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:orientation="vertical" >
+
+	        <ImageButton
+	            android:id="@+id/order_main_page_yiwancheng_btn"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/order_main_page_button_selector"
+	            android:src="@drawable/order_main_page_car" />
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="已完成"
+	            android:textColor="@color/black"
+	            android:textSize="12sp" />
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:orientation="vertical" >
+
+	        <ImageButton
+	            android:id="@+id/order_main_page_yiquxiao_btn"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/order_main_page_button_selector"
+	            android:src="@drawable/order_main_page_car" />
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="已取消"
+	            android:textColor="@color/black"
+	            android:textSize="12sp" />
+	    </LinearLayout>
+	</LinearLayout>
+	
+	<!-- 第二行图标 -->
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:baselineAligned="false"
+	    android:gravity="center"
+	    android:orientation="horizontal" >
+
+	    <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:orientation="vertical" >
+
+	        <ImageButton
+	            android:id="@+id/order_main_page_quxiaoshenqing_btn"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/order_main_page_button_selector"
+	            android:src="@drawable/order_main_page_phone" />
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="取消申请"
+	            android:textColor="@color/black"
+	            android:textSize="12sp" />
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:orientation="vertical" >
+
+	        <ImageButton
+	            android:id="@+id/order_main_page_tuihuoshenqing_btn"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/order_main_page_button_selector"
+	            android:src="@drawable/order_main_page_phone" />
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="退货申请"
+	            android:textColor="@color/black"
+	            android:textSize="12sp" />
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:orientation="vertical" >
+
+	        <ImageButton
+	            android:id="@+id/order_main_page_tuihuozhong_btn"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/order_main_page_button_selector"
+	            android:src="@drawable/order_main_page_promotion" />
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="退货中"
+	            android:textColor="@color/black"
+	            android:textSize="12sp" />
+	    </LinearLayout>
+
+	    <!-- 占位图标  未显示 -->
+	    <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:orientation="vertical"
+	         >
+
+	        <ImageButton
+	            android:id="@+id/order_main_page_yituihuo_btn"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/order_main_page_button_selector"
+	            android:src="@drawable/order_main_page_promotion" />
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="已退货"
+	            android:textColor="@color/black"
+	            android:textSize="12sp" />
+	    </LinearLayout>
+	</LinearLayout>
+	
+    
+</LinearLayout>

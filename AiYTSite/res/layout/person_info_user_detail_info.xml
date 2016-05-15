@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+    
+    
+     <!-- 自定义标题栏 -->
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_alignParentTop="true"
+            android:background="@color/white" >
+
+            <ImageView
+                android:layout_width="220.0dip"
+                android:layout_height="33.0dip"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/logo_test_color"
+                android:contentDescription="@string/image_desc"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="用户信息"
+                android:textColor="@color/child_page_titletextcolor"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/spliter" />
+    <!-- 自定义标题栏 -->    
+    </LinearLayout>
+    
+	
+	<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="25.0dip"
+     >
+	
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingLeft="10dp"
+	    android:paddingRight="10dp"
+	    android:background="@drawable/cart_top"
+	    android:orientation="vertical">
+		
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:paddingTop="3dp">
+	        
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="用户名："/>
+	        <TextView 
+	            android:id="@+id/person_info_user_detail_name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="cdyqke2015"/>
+	    </LinearLayout>
+	    
+	    <View 
+	        android:layout_width="fill_parent"
+	        android:layout_height="0.5dp"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginBottom="5dp"
+	        android:background="@drawable/line_dot"/>
+	    
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:paddingTop="3dp">
+	        
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="注册时间："/>
+	        
+	        <TextView 
+	            android:id="@+id/person_info_user_detail_register_time"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="2015-06-25 14:56"/>
+	        
+	</LinearLayout>
+	    
+	</LinearLayout>
+	
+	<View 
+	    android:layout_width="fill_parent"
+	    android:layout_height="5dp"
+	    android:background="@drawable/cart_bottom"/>
+	
+	<Button
+        android:id="@+id/person_info_user_detail_info_back_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="36.0dip"
+        android:layout_marginTop="50.0dip"
+        android:layout_marginLeft="10.0dip"
+    	android:layout_marginRight="10.0dip"
+        android:background="@drawable/btn_white"
+        android:text="返回"
+        android:textColor="@color/black"
+        android:textSize="15.0sp" />
+
+
+</LinearLayout>
+</LinearLayout>

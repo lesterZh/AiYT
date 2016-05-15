@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/child_page_titlecolor">
+    <TextView 
+        android:id="@+id/order_quxiao_shenqing_scan_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消申请"
+        android:layout_centerInParent="true"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        />
+
+    <ImageView 
+        android:id="@+id/order_quxiao_shenqing_scan_title_back"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/shake_back_normal"
+        android:layout_marginLeft="5dp"
+        />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/order_quxiao_shenqing_scan_progress_bar_layout"
+        android:visibility="gone">
+        
+        <ProgressBar 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_centerInParent="true"/>
+        
+    </RelativeLayout>
+    
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/order_quxiao_shenqing_scan_show_info_layout">
+    <ListView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/order_quxiao_shenqing_scan_listview"
+        android:dividerHeight="10dp"
+        android:divider="@color/bg"
+        android:listSelector="#0000">
+        
+    </ListView>
+    </LinearLayout>
+
+</LinearLayout>

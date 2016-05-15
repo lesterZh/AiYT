@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/maintitle"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+    
+        
+        <LinearLayout 
+            android:id="@+id/main_bottom"
+	        android:orientation="horizontal" 
+	        android:background="@color/list_normal"
+	        android:layout_width="fill_parent" 
+	        android:layout_height="wrap_content" 
+	        android:layout_alignParentBottom="true"
+	        android:baselineAligned="false">
+	        
+	        <LinearLayout 
+	            android:id="@+id/navigate_bar_home" 
+	            android:layout_width="fill_parent" 
+	            android:layout_height="wrap_content" 
+	            android:orientation="vertical"
+	            android:layout_marginTop="4.0dip" 
+	            android:layout_marginBottom="4.0dip" 
+	            android:layout_weight="1.0">
+	            <ImageView 
+	                android:id="@+id/img_home_page" 
+	                android:layout_width="30.0dip" 
+	                android:layout_height="30.0dip" 
+	                android:layout_gravity="center_horizontal"
+	                android:src="@drawable/nav_home_hover" 
+	                android:layout_centerHorizontal="true" 
+	                />
+	            <TextView 
+	                android:textSize="12.0sp" 
+	                android:textColor="@drawable/tab_font" 
+	                android:id="@+id/tv_home_page" 
+	                android:layout_width="wrap_content" 
+	                android:layout_height="wrap_content" 
+	                android:text="首页" 
+	                android:layout_gravity="center_horizontal" />
+	        </LinearLayout>
+	        
+	        <LinearLayout 
+	            android:id="@+id/navigate_bar_stockpile_management" 
+	            android:layout_width="fill_parent" 
+	            android:layout_height="wrap_content" 
+	            android:orientation="vertical"
+	            android:layout_marginTop="4.0dip" 
+	            android:layout_marginBottom="4.0dip" 
+	            android:layout_weight="1.0">
+	            <ImageView 
+	                android:id="@+id/img_stockpile_management" 
+	                android:layout_width="30.0dip" 
+	                android:layout_height="30.0dip" 
+	                android:layout_gravity="center_horizontal"
+	                android:src="@drawable/nav_stockpile" 
+	                android:layout_centerHorizontal="true" 
+	                />
+	            <TextView 
+	                android:textSize="12.0sp" 
+	                android:textColor="@drawable/tab_font" 
+	                android:id="@+id/tv_stockpile_management" 
+	                android:layout_width="wrap_content" 
+	                android:layout_height="wrap_content" 
+	                android:text="库存管理" 
+	                android:layout_gravity="center_horizontal" />
+	        </LinearLayout>
+	        
+	        <LinearLayout 
+	            android:id="@+id/navigate_bar_order_logistics" 
+	            android:layout_width="fill_parent" 
+	            android:layout_height="wrap_content" 
+	            android:orientation="vertical"
+	            android:layout_marginTop="4.0dip" 
+	            android:layout_marginBottom="4.0dip" 
+	            android:layout_weight="1.0">
+	            <ImageView 
+	                android:id="@+id/img_order_logistics" 
+	                android:layout_width="30.0dip" 
+	                android:layout_height="30.0dip" 
+	                android:layout_gravity="center_horizontal"
+	                android:src="@drawable/nav_stockpile" 
+	                android:layout_centerHorizontal="true" 
+	                />
+	            <TextView 
+	                android:textSize="12.0sp" 
+	                android:textColor="@drawable/tab_font" 
+	                android:id="@+id/tv_order_logistics" 
+	                android:layout_width="wrap_content" 
+	                android:layout_height="wrap_content" 
+	                android:text="订单物流" 
+	                android:layout_gravity="center_horizontal" />
+	        </LinearLayout>
+	        
+	        <LinearLayout 
+	            android:id="@+id/navigate_bar_info_center" 
+	            android:layout_width="fill_parent" 
+	            android:layout_height="wrap_content" 
+	            android:orientation="vertical"
+	            android:layout_marginTop="4.0dip" 
+	            android:layout_marginBottom="4.0dip" 
+	            android:layout_weight="1.0">
+	            <ImageView 
+	                android:id="@+id/img_info_center" 
+	                android:layout_width="30.0dip" 
+	                android:layout_height="30.0dip" 
+	                android:layout_gravity="center_horizontal"
+	                android:src="@drawable/nav_info_center" 
+	                android:layout_centerHorizontal="true" 
+	                />
+	            <TextView 
+	                android:textSize="12.0sp" 
+	                android:textColor="@drawable/tab_font" 
+	                android:id="@+id/tv_info_center" 
+	                android:layout_width="wrap_content" 
+	                android:layout_height="wrap_content" 
+	                android:text="个人信息" 
+	                android:layout_gravity="center_horizontal" />
+	        </LinearLayout>
+	        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/main_bottom"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/tabpager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>    
+
+    
+</RelativeLayout>

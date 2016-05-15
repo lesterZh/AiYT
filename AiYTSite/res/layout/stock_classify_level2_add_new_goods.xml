@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:orientation="vertical" >
+    
+    
+    <!-- 添加图片 -->
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical">
+	<!-- 图片包裹 调整位置 -->
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/stock_classify_level2_add_goods_add_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/im_input_tool_add"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/unused_tv_add_image"
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:layout_below="@id/stock_classify_level2_add_goods_add_image"
+                android:layout_marginTop="5dp"
+                 />
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/unused_tv_add_image"
+                android:layout_marginTop="5dp"
+                android:text="添加图片"
+                android:layout_marginLeft="2dp"
+                android:textColor="#0066CC" />
+        </RelativeLayout>
+        
+        <ImageView 
+            android:id="@+id/stock_classify_level2_add_goods_image_show"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/no_image"/>
+        
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/stock_classify_level2_add_goods_photo_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/im_input_tool_camera"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/unused_tv_add_image2"
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:layout_below="@id/stock_classify_level2_add_goods_photo_image"
+                android:layout_marginTop="5dp"
+                 />
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/unused_tv_add_image2"
+                android:layout_marginTop="5dp"
+                android:text="直接拍照"
+                android:layout_marginLeft="2dp"
+                android:textColor="#0066CC" />
+        </RelativeLayout>
+        
+    </LinearLayout>
+    
+    </LinearLayout>
+    
+	<!-- 输入参数 1行 -->
+	<LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="库存："/>
+        <EditText 
+            android:id="@+id/stock_classify_level2_add_goods_stock_et"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="输入库存"
+            android:maxLines="1"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="价格："/>
+        <EditText 
+            android:id="@+id/stock_classify_level2_add_goods_price_et"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:hint="输入价格"/>
+    </LinearLayout>
+    
+	
+	<!-- 输入参数 2行 -->
+	<LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="颜色："/>
+        <EditText 
+            android:id="@+id/stock_classify_level2_add_goods_color_et"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="输入颜色"
+            android:maxLines="1"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="规格："/>
+        <EditText 
+            android:id="@+id/stock_classify_level2_add_goods_type_et"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:hint="输入规格"/>
+    </LinearLayout>
+	
+	<!-- 按钮行 -->
+	<LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="5dp">
+        
+	    <Button
+            android:id="@+id/stock_classify_level2_add_goods_ok_btn" 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="确认"
+            android:textColor="#fff"
+            android:background="@drawable/btn_green"/>
+        
+        <View 
+            android:layout_width="15dp"
+            android:layout_height="fill_parent"/>
+        <Button
+            android:id="@+id/stock_classify_level2_add_goods_cancle_btn" 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:textColor="#fff"
+            android:background="@drawable/btn_orange"/>
+	</LinearLayout>
+	
+	
+</LinearLayout>

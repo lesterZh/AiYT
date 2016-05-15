@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+    
+    <!-- 整体开始 -->
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+        
+        <!-- 紧凑包裹 -->
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            
+        <ImageView 
+            android:id="@+id/stock_level2_listView_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/muji"/>
+        
+        <!-- 文字包裹 -->
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            >
+            
+            <!-- 文字第一行 -->
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                
+                    <TextView 
+                    android:id="@+id/stock_level2_listView_classify"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="分类：禽类"/>
+                    
+                    <TextView 
+                    android:id="@+id/stock_level2_listView_price"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="价格：38.8"
+                    android:textColor="#f00"
+                    android:textSize="14sp"/>
+                    
+            <!-- 文字第一行 -->   
+            </LinearLayout>
+            
+            
+            <!-- 文字第2行 -->	
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                
+                <TextView 
+                    android:id="@+id/stock_level2_listView_color"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="颜色：橘红色"/>
+                    
+                    <TextView 
+                    android:id="@+id/stock_level2_listView_type"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="规格：3斤/只"/>
+                    
+            <!-- 文字第2行 -->
+            </LinearLayout>
+            
+            <!-- 文字第3行 -->
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                
+                <TextView
+                    android:id="@+id/stock_level2_listView_saleMonth" 
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#00bfff"
+                    android:text="月销量：118"/>
+                    
+                    <TextView
+                    android:id="@+id/stock_level2_listView_saleAll" 
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1e90ff"
+                    android:text="总销量：329"/>
+                   
+            <!-- 文字第3行 -->   
+            </LinearLayout>
+            
+            
+            <!-- 库存：第4行 -->
+            <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            >
+            
+            <TextView
+                android:id="@+id/stock_level2_listView_stock"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="库存：169"
+                android:textColor="#ff8c00"
+                android:textSize="16sp"
+                android:layout_marginRight="5dp" />
+
+            <LinearLayout 
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+                
+                <Button 
+                android:id="@+id/stock_level2_listView_changeBtn"    
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/btn_orange"
+                android:text="修改库存"
+                android:textColor="#fff"
+                android:layout_gravity="right"
+                android:padding="5dp"/>
+                
+            </LinearLayout>
+            
+        <!-- 库存：第4行 -->    
+        </LinearLayout>
+          
+        <!-- 文字包裹 -->
+        </LinearLayout>
+        
+        
+        <!-- 紧凑包裹 -->
+        </LinearLayout>
+        
+      
+    <!-- 整体结束 -->    
+    </LinearLayout>
+
+</LinearLayout>

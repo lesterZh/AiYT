@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- 整体开始 -->
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+        
+        <!-- 紧凑包裹 -->
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            
+        <ImageView 
+            android:id="@+id/order_goods_detail_listView_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/muji"/>
+        
+        <!-- 文字包裹 -->
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            >
+            
+            <!-- 文字第一行 -->
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                
+                    <TextView 
+                    android:id="@+id/order_goods_detail_listView_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#000080"
+                    android:text="名字：老母鸡"/>
+                    
+                     <TextView 
+                    android:id="@+id/order_goods_detail_listView_type"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="规格：3斤/只"/>
+                    
+                    
+            <!-- 文字第一行 -->   
+            </LinearLayout>
+            
+            
+            <!-- 文字第2行 -->	
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                
+                <TextView 
+                    android:id="@+id/order_goods_detail_listView_attri"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="属性：xxxxxx"
+                    android:textColor="#008080"
+                    android:textSize="14sp"/>
+                
+            <!-- 文字第2行 -->
+            </LinearLayout>
+            
+            <!-- 文字第3行 -->
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                
+                <TextView 
+                    android:id="@+id/order_goods_detail_listView_price"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="价格：38.8"
+                    android:textColor="#f00"
+                    android:textSize="14sp"/>
+                
+                <TextView 
+                    android:id="@+id/order_goods_detail_listView_nums"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="数量：3只"/>
+                   
+            <!-- 文字第3行 -->   
+            </LinearLayout>
+            
+            
+            <!-- 库存：第4行 -->
+            <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            >
+            
+            <TextView
+                android:id="@+id/order_goods_detail_listView_total_money"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="金额：116.4"
+                android:textColor="#ff8c00"
+                android:textSize="16sp"
+                android:layout_marginRight="5dp" />
+
+        <!-- 库存：第4行 -->    
+        </LinearLayout>
+          
+        <!-- 文字包裹 -->
+        </LinearLayout>
+        
+        
+        <!-- 紧凑包裹 -->
+        </LinearLayout>
+        
+      
+    <!-- 整体结束 -->    
+    </LinearLayout>
+
+</LinearLayout>

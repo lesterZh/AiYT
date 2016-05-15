@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- 自定义标题栏 -->
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_alignParentTop="true"
+            android:background="@color/white" >
+
+            <ImageView
+                android:layout_width="220.0dip"
+                android:layout_height="33.0dip"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/logo_test_color"
+                android:contentDescription="@string/image_desc"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="地址管理"
+                android:textColor="@color/child_page_titletextcolor"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/spliter" />
+    <!-- 自定义标题栏 -->    
+    </LinearLayout>
+
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/cart_top"
+	    android:layout_marginTop="25dp"
+	    android:paddingLeft="10dp"
+	    android:paddingRight="10dp"
+	    android:orientation="vertical">
+	    
+	    <TextView
+	        android:layout_marginTop="3dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="地址："/>
+	    <View 
+	        android:layout_width="fill_parent"
+	        android:layout_height="0.5dp"
+	        android:background="@drawable/line_dot"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginBottom="5dp"/>
+	    <TextView
+	        android:id="@+id/person_info_address_old_textView"
+	        android:layout_marginTop="3dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="四川省成都市二环交大路口"
+	        android:textSize="16dp"
+	        android:textColor="#191970"/>
+	    
+	</LinearLayout>
+	<ImageView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="5dp"
+	    android:background="@drawable/cart_bottom"/>
+	
+	<TextView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="25dp"
+	    android:paddingLeft="10dp"
+	    android:paddingRight="10dp"
+	    android:text="请输入新地址："/>
+	
+	<EditText 
+	    android:id="@+id/person_info_address_new_edittext"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:hint="新地址"/>
+	
+	 <Button
+        android:id="@+id/person_info_address_submit_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="36.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/btn_green"
+        android:text="确认修改"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+        android:textSize="15.0sp" />
+    
+    <Button
+        android:id="@+id/person_info_address_back_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="36.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/btn_white"
+        android:text="返回"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+        android:textSize="15.0sp" />
+</LinearLayout>
